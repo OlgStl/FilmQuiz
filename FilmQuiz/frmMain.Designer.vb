@@ -45,7 +45,7 @@ Partial Class frmMain
         Me.lbl.Font = New System.Drawing.Font("Palace Script MT", 48.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl.Location = New System.Drawing.Point(329, 27)
         Me.lbl.Name = "lbl"
-        Me.lbl.Size = New System.Drawing.Size(216, 64)
+        Me.lbl.Size = New System.Drawing.Size(211, 64)
         Me.lbl.TabIndex = 0
         Me.lbl.Text = "Movie Quiz"
         '
@@ -77,7 +77,7 @@ Partial Class frmMain
         '
         'btnQuit
         '
-        Me.btnQuit.Font = New System.Drawing.Font("OCR A Std", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnQuit.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnQuit.Location = New System.Drawing.Point(653, 321)
         Me.btnQuit.Name = "btnQuit"
         Me.btnQuit.Size = New System.Drawing.Size(106, 34)
