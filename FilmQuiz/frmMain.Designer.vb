@@ -25,7 +25,7 @@ Partial Class frmMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.lbl = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.txtPlayerName = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.lbl2 = New System.Windows.Forms.Label()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.btnStart = New System.Windows.Forms.Button()
@@ -59,12 +59,12 @@ Partial Class frmMain
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'txtPlayerName
+        'txtName
         '
-        Me.txtPlayerName.Location = New System.Drawing.Point(339, 375)
-        Me.txtPlayerName.Name = "txtPlayerName"
-        Me.txtPlayerName.Size = New System.Drawing.Size(147, 20)
-        Me.txtPlayerName.TabIndex = 2
+        Me.txtName.Location = New System.Drawing.Point(339, 375)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(147, 20)
+        Me.txtName.TabIndex = 2
         '
         'lbl2
         '
@@ -147,7 +147,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.lbl2)
-        Me.Controls.Add(Me.txtPlayerName)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lbl)
         Me.Name = "frmMain"
@@ -164,7 +164,7 @@ Partial Class frmMain
 
     Friend WithEvents lbl As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents txtPlayerName As TextBox
+    Friend WithEvents txtName As TextBox
     Friend WithEvents lbl2 As Label
     Friend WithEvents btnQuit As Button
     Friend WithEvents btnStart As Button

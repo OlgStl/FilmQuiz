@@ -10,4 +10,14 @@
     Private Sub lbl_Click(sender As Object, e As EventArgs) Handles lbl.Click
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If btnAnswer2.Checked Then
+            playerScore = playerScore + 1
+        End If
+
+        frmQuestion2.Show()
+
+        Me.Hide()
+    End Sub
 End Class
