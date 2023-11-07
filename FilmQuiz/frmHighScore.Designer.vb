@@ -23,10 +23,10 @@ Partial Class frmHighScore
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lbl = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnQuit = New System.Windows.Forms.Button()
+        Me.btnAgain = New System.Windows.Forms.Button()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstHighScore = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'lbl
@@ -38,25 +38,25 @@ Partial Class frmHighScore
         Me.lbl.TabIndex = 15
         Me.lbl.Text = "Congratulations Your Score Will Be Added To The Hall Of Frame"
         '
-        'Button1
+        'btnQuit
         '
-        Me.Button1.Font = New System.Drawing.Font("OCR A Extended", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(618, 389)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(165, 49)
-        Me.Button1.TabIndex = 14
-        Me.Button1.Text = "Quit"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnQuit.Font = New System.Drawing.Font("OCR A Extended", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnQuit.Location = New System.Drawing.Point(618, 389)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(165, 49)
+        Me.btnQuit.TabIndex = 14
+        Me.btnQuit.Text = "Quit"
+        Me.btnQuit.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnAgain
         '
-        Me.Button2.Font = New System.Drawing.Font("OCR A Extended", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(618, 329)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(165, 49)
-        Me.Button2.TabIndex = 16
-        Me.Button2.Text = "Again"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnAgain.Font = New System.Drawing.Font("OCR A Extended", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgain.Location = New System.Drawing.Point(618, 329)
+        Me.btnAgain.Name = "btnAgain"
+        Me.btnAgain.Size = New System.Drawing.Size(165, 49)
+        Me.btnAgain.TabIndex = 16
+        Me.btnAgain.Text = "Again"
+        Me.btnAgain.UseVisualStyleBackColor = True
         '
         'CheckedListBox1
         '
@@ -66,27 +66,27 @@ Partial Class frmHighScore
         Me.CheckedListBox1.Size = New System.Drawing.Size(8, 4)
         Me.CheckedListBox1.TabIndex = 17
         '
-        'ListBox1
+        'lstHighScore
         '
-        Me.ListBox1.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 33
-        Me.ListBox1.Items.AddRange(New Object() {"Name" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "Score", "Rhonda" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "5", "Dave" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "5"})
-        Me.ListBox1.Location = New System.Drawing.Point(115, 116)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(583, 202)
-        Me.ListBox1.TabIndex = 18
+        Me.lstHighScore.Font = New System.Drawing.Font("Showcard Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstHighScore.FormattingEnabled = True
+        Me.lstHighScore.ItemHeight = 33
+        Me.lstHighScore.Items.AddRange(New Object() {"Name" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "Score", "Rhonda" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "5", "Dave" & Global.Microsoft.VisualBasic.ChrW(9) & Global.Microsoft.VisualBasic.ChrW(9) & "5"})
+        Me.lstHighScore.Location = New System.Drawing.Point(115, 116)
+        Me.lstHighScore.Name = "lstHighScore"
+        Me.lstHighScore.Size = New System.Drawing.Size(583, 202)
+        Me.lstHighScore.TabIndex = 18
         '
         'frmHighScore
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.lstHighScore)
         Me.Controls.Add(Me.CheckedListBox1)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnAgain)
         Me.Controls.Add(Me.lbl)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnQuit)
         Me.Name = "frmHighScore"
         Me.Text = "frmHighScore"
         Me.ResumeLayout(False)
@@ -94,8 +94,8 @@ Partial Class frmHighScore
     End Sub
 
     Friend WithEvents lbl As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnQuit As Button
+    Friend WithEvents btnAgain As Button
     Friend WithEvents CheckedListBox1 As CheckedListBox
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lstHighScore As ListBox
 End Class
