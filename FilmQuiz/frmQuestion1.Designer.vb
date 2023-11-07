@@ -22,6 +22,7 @@ Partial Class frmQuestion1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmQuestion1))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -32,6 +33,8 @@ Partial Class frmQuestion1
         Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
         Me.lbl = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.tmrQuestion1 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -136,11 +139,23 @@ Partial Class frmQuestion1
         Me.Button1.Text = "Next"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(48, 359)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(394, 42)
+        Me.ProgressBar1.TabIndex = 8
+        '
+        'tmrQuestion1
+        '
+        Me.tmrQuestion1.Interval = 1000
+        '
         'frmQuestion1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbl)
         Me.Controls.Add(Me.GroupBox1)
@@ -165,4 +180,6 @@ Partial Class frmQuestion1
     Friend WithEvents btnAnswer1 As RadioButton
     Friend WithEvents lbl As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents tmrQuestion1 As Timer
 End Class
