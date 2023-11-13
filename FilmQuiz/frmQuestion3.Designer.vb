@@ -33,8 +33,8 @@ Partial Class frmQuestion3
         Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.tmrQuestion1 = New System.Windows.Forms.Timer(Me.components)
+        Me.ProgressBar3 = New System.Windows.Forms.ProgressBar()
+        Me.tmrQuestion3 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -139,23 +139,23 @@ Partial Class frmQuestion3
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
-        'ProgressBar1
+        'ProgressBar3
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(43, 374)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(394, 42)
-        Me.ProgressBar1.TabIndex = 13
+        Me.ProgressBar3.Location = New System.Drawing.Point(43, 374)
+        Me.ProgressBar3.Name = "ProgressBar3"
+        Me.ProgressBar3.Size = New System.Drawing.Size(394, 42)
+        Me.ProgressBar3.TabIndex = 13
         '
-        'tmrQuestion1
+        'tmrQuestion3
         '
-        Me.tmrQuestion1.Interval = 1000
+        Me.tmrQuestion3.Interval = 1000
         '
         'frmQuestion3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ProgressBar1)
+        Me.Controls.Add(Me.ProgressBar3)
         Me.Controls.Add(Me.lbl)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
@@ -180,6 +180,6 @@ Partial Class frmQuestion3
     Friend WithEvents btnAnswer1 As RadioButton
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents ProgressBar1 As ProgressBar
-    Friend WithEvents tmrQuestion1 As Timer
+    Friend WithEvents ProgressBar3 As ProgressBar
+    Friend WithEvents tmrQuestion3 As Timer
 End Class
