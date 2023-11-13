@@ -1,6 +1,5 @@
 ﻿Public Class frmQuestion2
     Public Sub init()
-
         progressCount = 0
         tmrQuestion2.Enabled = True
         ProgressBar2.Value = 0
@@ -23,12 +22,24 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        tmrQuestion2.Enabled = False
         If btnAnswer2.Checked Then
             playerScore = playerScore + 1
+            frmQuestion3.Show()
+            frmQuestion3.init()
+            Me.Hide()
         End If
 
         frmQuestion3.Show()
 
         Me.Hide()
+    End Sub
+
+    Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar2.Click
+
+    End Sub
+
+    Private Sub tmrQuestion2_Tick(sender As Object, e As EventArgs) Handles tmrQuestion2.Tick
+
     End Sub
 End Class

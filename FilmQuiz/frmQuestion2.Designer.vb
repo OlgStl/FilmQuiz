@@ -22,6 +22,7 @@ Partial Class frmQuestion2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmQuestion2))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
@@ -32,6 +33,8 @@ Partial Class frmQuestion2
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lbl = New System.Windows.Forms.Label()
+        Me.tmrQuestion2 = New System.Windows.Forms.Timer(Me.components)
+        Me.ProgressBar2 = New System.Windows.Forms.ProgressBar()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -136,11 +139,23 @@ Partial Class frmQuestion2
         Me.lbl.TabIndex = 7
         Me.lbl.Text = "Who is Oliver's best frind?"
         '
+        'tmrQuestion2
+        '
+        Me.tmrQuestion2.Interval = 1000
+        '
+        'ProgressBar2
+        '
+        Me.ProgressBar2.Location = New System.Drawing.Point(59, 358)
+        Me.ProgressBar2.Name = "ProgressBar2"
+        Me.ProgressBar2.Size = New System.Drawing.Size(394, 42)
+        Me.ProgressBar2.TabIndex = 9
+        '
         'frmQuestion2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ProgressBar2)
         Me.Controls.Add(Me.lbl)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox1)
@@ -165,4 +180,6 @@ Partial Class frmQuestion2
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button1 As Button
     Friend WithEvents lbl As Label
+    Friend WithEvents tmrQuestion2 As Timer
+    Friend WithEvents ProgressBar2 As ProgressBar
 End Class
