@@ -13,10 +13,6 @@
         tmrQuestion3.Enabled = False
         If btnAnswer2.Checked Then
             playerScore = playerScore + 1
-            frmHighScore.Show()
-            frmHighScore.doScore()
-
-            Me.Hide()
         End If
         frmHighScore.Show()
         frmHighScore.doScore()
