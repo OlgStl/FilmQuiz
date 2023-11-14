@@ -31,7 +31,7 @@
         End If
 
         frmQuestion3.Show()
-
+        frmQuestion3.init()
         Me.Hide()
     End Sub
 
@@ -40,6 +40,16 @@
     End Sub
 
     Private Sub tmrQuestion2_Tick(sender As Object, e As EventArgs) Handles tmrQuestion2.Tick
+        progressCount = progressCount + 1
 
+        ProgressBar2.PerformStep()
+        If progressCount = 10 Then
+            tmrQuestion2.Enabled = False
+            MsgBox("Too Slow Try Again")
+            frmQuestion3.Show()
+            frmQuestion3.init()
+            Me.Hide()
+
+        End If
     End Sub
 End Class
